@@ -1,8 +1,14 @@
 import React from 'react';
 import './Homepage.css';
 import tourismVideo from '../assets/tourism.mp4';  
+import { useNavigate } from 'react-router-dom';
 
 const Homepage = () => {
+  const navigate = useNavigate();
+
+  const eventHandler = () =>{
+    navigate('/iternary')
+  }
   return (
     <div>
       <nav className="nav">
@@ -27,7 +33,7 @@ const Homepage = () => {
         <div className="hero-content">
           <h1>Plan Your Trip</h1>
           <p>Stunning destination , seamless Planning</p>
-          <button className="btn" onClick={() => alert('start planning!')}>
+          <button className="btn"  onClick={eventHandler}>
             Start Planning
           </button>
         </div>

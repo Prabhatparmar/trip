@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Homepage from './Pages/Homepage'
+import Iternary from './Pages/Iternary'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element = {<Homepage/>}></Route>
+          <Route path="iternary" element = {<Iternary/>}></Route>
         </Routes>
       </Router>
       </>
