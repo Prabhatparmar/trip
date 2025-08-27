@@ -9,13 +9,16 @@ const Homepage = () => {
   const eventHandler = () =>{
     navigate('/iternary')
   }
+   const eventDash = () =>{
+    navigate('/dashboard')
+  }
   return (
     <div>
       <nav className="nav">
         <div className="logo">TripPlanner</div>
         <ul className="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">DashBoard</a></li>
+          <li><a href="#" onClick={eventDash}>DashBoard</a></li>
           <li><a href="#">Itinerary</a></li>
         </ul>
       </nav>

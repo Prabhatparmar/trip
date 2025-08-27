@@ -5,9 +5,10 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Homepage from './Pages/Homepage'
 import Iternary from './Pages/Iternary'
+import Dashboard from './Pages/Dashboard'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element = {<Homepage/>}></Route>
           <Route path="iternary" element = {<Iternary/>}></Route>
+          <Route path="dashboard" element = {<Dashboard/>}></Route>
         </Routes>
       </Router>
       </>
